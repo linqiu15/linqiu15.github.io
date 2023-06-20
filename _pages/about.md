@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-## 
+## About me
 Lin Qiu is now a graduate student, who majors in Theoretical Physics in IHEP, CAS. He is interested in:
     - Particle physics, especially Hadron Physics
     - Programming including Julia, Python, C++, Mathematica and so on
