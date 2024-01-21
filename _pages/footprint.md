@@ -9,7 +9,7 @@ permalink: /footprint/
 ## 故宫初雪
 
 <div align=center>
-<img src="{{ site.baseurl }}/images/footprint/gonggu_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gonggu_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gonggu_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gonggu_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gonggu_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gonggu_6.jpg" width="30%">
+<img src="{{ site.baseurl }}/images/footprint/gugong_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gugong_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gugong_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gugong_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gugong_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gugong_6.jpg" width="30%">
 </div>
 
 # 二零二三年十月
