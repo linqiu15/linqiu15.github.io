@@ -8,5 +8,12 @@ permalink: /footprint/
 
 ## 黄山
 
-<!-- <link type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/footnote/huangshan_1.png"> -->
-<img src="{{ site.baseurl }}/images/footprint/huangshan_1.png" width="50%">
+<div align=center>
+<img src="{{ site.baseurl }}/images/footprint/huangshan_1.jpg" width="30%">
+</div>
+
+## 婺源篁岭
+
+<div align=center>
+<img src="{{ site.baseurl }}/images/footprint/wuyuanhuanglin_1" width="30%">
+</div>
