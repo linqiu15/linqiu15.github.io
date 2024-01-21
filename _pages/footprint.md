@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Footnote
-permalink: /foot-note/
+title: Footprint
+permalink: /footprint/
 ---
 
 # 二零二三年捌月
@@ -9,4 +9,4 @@ permalink: /foot-note/
 ## 黄山
 
 <!-- <link type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/footnote/huangshan_1.png"> -->
-<img src="{{ site.baseurl }}/images/footnote/huangshan_1.png" width="50%">
+<img src="{{ site.baseurl }}/images/footprint/huangshan_1.png" width="50%">
