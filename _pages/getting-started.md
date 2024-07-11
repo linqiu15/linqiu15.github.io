@@ -5,10 +5,14 @@ permalink: /getting-started/
 ---
 
 ## What am I reading?
-
+- [] [《喧哗与骚动》](https://book.douban.com/subject/34983258/) （**书友漂流活动赠书**)
+- [] [《查拉图斯特拉如是说》]（https://book.douban.com/subject/34892936/）
+- [x] [《法治的细节》](https://book.douban.com/subject/35635639/)
+- [x] [《胜者思维》](https://book.douban.com/subject/27038434/)
+- [x] [《我的阿勒泰》](https://book.douban.com/subject/35552619/)
 - [] [《病隙碎笔》 - 史铁生](https://book.douban.com/subject/20476928/)
-- [] [《我们生活在巨大的差距中》-余华](https://book.douban.com/subject/26291216/)
-- [] [《我的心迟到了：佩索阿情诗》 - 费尔南多·佩索阿](https://book.douban.com/subject/35221710/)
+- [x] [《我们生活在巨大的差距中》-余华](https://book.douban.com/subject/26291216/)
+- [x] [《我的心迟到了：佩索阿情诗》 - 费尔南多·佩索阿](https://book.douban.com/subject/35221710/)
 - [] [《如果在冬夜，一个旅人》 - 伊塔洛·卡尔维诺](https://book.douban.com/subject/10555535/)
 - [] [《洛丽塔》- 纳博科夫](https://book.douban.com/subject/1465324/)
 - [x] [《窄门》-纪德](https://book.douban.com/subject/30331835/)
