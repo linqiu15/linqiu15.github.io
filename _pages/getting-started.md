@@ -5,8 +5,8 @@ permalink: /getting-started/
 ---
 
 ## What am I reading?
-- [] [《喧哗与骚动》](https://book.douban.com/subject/34983258/) （**书友漂流活动赠书**)
-- [] [《查拉图斯特拉如是说》]（https://book.douban.com/subject/34892936/）
+- [] [《喧哗与骚动》](https://book.douban.com/subject/34983258/) （**书友漂流阅读活动赠书**)
+- [] [《查拉图斯特拉如是说》](https://book.douban.com/subject/34892936/)
 - [x] [《法治的细节》](https://book.douban.com/subject/35635639/)
 - [x] [《胜者思维》](https://book.douban.com/subject/27038434/)
 - [x] [《我的阿勒泰》](https://book.douban.com/subject/35552619/)
