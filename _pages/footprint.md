@@ -14,7 +14,7 @@ permalink: /footprint/
 ## 丽江
 
 <div align=center>
-<img src="{{ site.baseurl }}/images/footprint/lijiang_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_6.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_7.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_8.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_9.jpg" width="30%">
+<img src="{{ site.baseurl }}/images/footprint/lijiang_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_7.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_6.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_8.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_9.jpg" width="30%">
 </div>
 
 # 二零二三年十二月
