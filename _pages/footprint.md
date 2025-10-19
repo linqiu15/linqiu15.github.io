@@ -4,6 +4,18 @@ title: Footprint
 permalink: /footprint/
 ---
 
+# 二零二五年七月至十月
+## 爬山:青城山、灵岩山、瓦屋山、峨眉山、天台山
+
+<div align=center>
+<img src="{{ site.baseurl }}/images/footprint/qingchengshan1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/qingchengshan2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/qingchengshan3.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lingyanshan1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lingyanshan2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lingyanshan3.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/wawushan1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/wawushan2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/wawushan3.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/emeishan1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/emeishan2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/emeishan3.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/tiantaishan1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/tiantaishan2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/tiantaishan3.jpeg" width="30%">
+</div>
+
+## 骑行：天府绿道、都江堰-成都
+<div align=center>
+<img src="{{ site.baseurl }}/images/footprint/qixingchengdu1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/qixingchengdu2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/qixingchengdu3.jpeg" width="30%">
+</div>
+
 # 二零二四年二月
 ## 大理
 
