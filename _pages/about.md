@@ -11,6 +11,6 @@ Lin is now a postdoc in theoretical physics who works in ODU department and Jeff
 - Application of AI/Machine learning technology in hadron physics
 
 ## Contact
-- Email: qiulin@ihep.ac.cn
+- Email: lqiu@odu.edu
 - ResearchGate: [Lin Qiu](https://www.researchgate.net/profile/Lin_Qiu29)
 - InspireHep: [Lin Qiu](https://inspirehep.net/authors/2029017)
