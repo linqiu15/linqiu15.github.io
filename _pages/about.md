@@ -5,10 +5,10 @@ permalink: /about/
 ---
 
 ## About me
-Lin Qiu is now a graduate student, who majors in Theoretical Physics in IHEP, CAS. He is interested in:
-- Particle physics, especially Hadron Physics
-- Programming including Julia, Python, C++, Mathematica and so on
-- Literature reading and writting(beginner)
+Lin is now a postdoc in theoretical physics who works in ODU department and Jefferson Lab. He is mainly interested in:
+- Hadron Spectroscopy, mainly by Effective filed theories and S-matrix techniques
+- Spectroscopy on finite volume case 
+- Application of AI/Machine learning technology in hadron physics
 
 ## Contact
 - Email: qiulin@ihep.ac.cn
