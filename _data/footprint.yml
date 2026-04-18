@@ -1,0 +1,195 @@
+# =============================================================
+# Footprint — trips rendered on /footprint/
+# -------------------------------------------------------------
+# Structure:
+#   - year: e.g. "2025"
+#     year_note: subtitle shown next to the year (Chinese ok)
+#     trips:
+#       - eyebrow: small uppercase label, e.g. "Feb · Yunnan"
+#         title_cn: Chinese name
+#         title_en: English name (optional)
+#         images: list of filenames under /images/footprint/
+# -------------------------------------------------------------
+# To add a trip: drop photos into /images/footprint/, then add
+# a new block here. Images render in the order listed.
+# =============================================================
+
+- year: "2025"
+  year_note: 二零二五年 · 七月至十月
+  trips:
+    - eyebrow: "Jul – Oct · Hiking · Sichuan"
+      title_cn: 爬山
+      title_en: Mountains of Sichuan
+      images:
+        - qingchengshan1.jpeg
+        - qingchengshan2.jpeg
+        - qingchengshan3.jpeg
+        - lingyanshan1.jpeg
+        - lingyanshan2.jpeg
+        - lingyanshan3.jpeg
+        - wawushan1.jpeg
+        - wawushan2.jpeg
+        - wawushan3.jpeg
+        - emeishan1.jpeg
+        - emeishan2.jpeg
+        - emeishan3.jpeg
+        - tiantaishan1.jpeg
+        - tiantaishan2.jpeg
+        - tiantaishan3.jpeg
+
+    - eyebrow: "Cycling · Chengdu"
+      title_cn: 骑行
+      title_en: "Tianfu Greenway · Dujiangyan → Chengdu"
+      images:
+        - qixingchengdu1.jpeg
+        - qixingchengdu2.jpeg
+        - qixingchengdu3.jpeg
+
+- year: "2024"
+  year_note: 二零二四年 · 二月
+  trips:
+    - eyebrow: "Feb · Yunnan"
+      title_cn: 大理
+      title_en: Dali
+      images:
+        - dali_1.jpg
+        - dali_2.jpg
+        - dali_3.jpg
+        - dali_4.jpg
+        - dali_5.jpg
+        - dali_6.jpg
+        - dali_7.jpg
+        - dali_8.jpg
+        - dali_9.jpg
+
+    - eyebrow: "Feb · Yunnan"
+      title_cn: 丽江
+      title_en: Lijiang
+      images:
+        - lijiang_1.jpg
+        - lijiang_2.jpg
+        - lijiang_3.jpg
+        - lijiang_4.jpg
+        - lijiang_5.jpg
+        - lijiang_6.jpg
+        - lijiang_7.jpg
+        - lijiang_8.jpg
+        - lijiang_9.jpg
+
+- year: "2023"
+  year_note: 二零二三年
+  trips:
+    - eyebrow: "Dec · Beijing"
+      title_cn: 故宫初雪
+      title_en: First snow at the Forbidden City
+      images:
+        - gugong_1.jpg
+        - gugong_2.jpg
+        - gugong_3.jpg
+        - gugong_4.jpg
+        - gugong_5.jpg
+        - gugong_6.jpg
+
+    - eyebrow: "Oct · Beijing · with family"
+      title_cn: 北京
+      title_en: Beijing with family
+      images:
+        - beijingwf_1.jpg
+        - beijingwf_2.JPG
+        - beijingwf_3.jpg
+        - beijingwf_4.jpg
+        - beijingwf_5.jpg
+        - beijingwf_6.jpg
+
+    - eyebrow: "Aug · Shanghai"
+      title_cn: 上海
+      title_en: Shanghai
+      images:
+        - shanghai_1.jpg
+        - shanghai_2.jpg
+        - shanghai_3.jpg
+        - shanghai_4.jpg
+        - shanghai_5.jpg
+        - shanghai_6.jpg
+
+    - eyebrow: "Aug · Anhui"
+      title_cn: 黄山
+      title_en: Huangshan
+      images:
+        - huangshan_1.jpg
+        - huangshan_2.jpg
+        - huangshan_3.jpg
+
+    - eyebrow: "Aug · Jiangxi"
+      title_cn: 婺源篁岭
+      title_en: Wuyuan Huangling
+      images:
+        - huanglin_1.jpg
+        - huanglin_2.jpg
+        - huanglin_3.jpg
+
+    - eyebrow: "Aug · Anhui"
+      title_cn: 西溪南
+      title_en: Xixinan
+      images:
+        - xixinan_1.jpg
+        - xixinan_2.jpg
+        - xixinan_3.jpg
+
+    - eyebrow: "Aug · Anhui"
+      title_cn: 呈坎
+      title_en: Chengkan
+      images:
+        - chengkan_1.jpg
+        - chengkan_2.jpg
+        - chengkan_3.jpg
+
+    - eyebrow: "Jun · Jiangsu"
+      title_cn: 苏州
+      title_en: Suzhou
+      images:
+        - suzhou_1.jpg
+        - suzhou_2.jpg
+        - suzhou_3.jpg
+        - suzhou_4.jpg
+        - suzhou_5.jpg
+        - suzhou_6.jpg
+        - suzhou_7.jpg
+        - suzhou_8.jpg
+        - suzhou_9.jpg
+        - suzhou_10.jpg
+        - suzhou_11.jpg
+        - suzhou_12.jpg
+
+    - eyebrow: "May · Zhejiang"
+      title_cn: 杭州
+      title_en: Hangzhou
+      images:
+        - hangzhou_1.jpg
+        - hangzhou_2.jpg
+        - hangzhou_3.jpg
+        - hangzhou_4.jpg
+        - hangzhou_5.jpg
+        - hangzhou_6.jpg
+
+    - eyebrow: "May · Zhejiang"
+      title_cn: 湖州
+      title_en: Huzhou
+      images:
+        - huzhou_1.jpg
+        - huzhou_2.jpg
+        - huzhou_3.jpg
+
+    - eyebrow: "Apr · Anhui"
+      title_cn: 巢湖
+      title_en: Chaohu
+      images:
+        - chaohu_1.jpg
+        - chaohu_2.jpg
+        - chaohu_3.jpg
+        - chaohu_4.jpg
+        - chaohu_5.jpg
+        - chaohu_6.jpg
+        - chaohu_7.jpg
+        - chaohu_8.JPG
+        - chaohu_9.JPG

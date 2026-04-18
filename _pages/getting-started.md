@@ -4,29 +4,206 @@ title: Now
 permalink: /getting-started/
 ---
 
-## What am I reading?
-- [ ] [《死屋手记》](https://book.douban.com/subject/1088418/)
-- [x] [《克林索尔的最后夏天》](https://book.douban.com/subject/30389968/)
-- [x] [《法治的细节》](https://book.douban.com/subject/35635639/)
-- [x] [《胜者思维》](https://book.douban.com/subject/27038434/)
-- [x] [《我的阿勒泰》](https://book.douban.com/subject/35552619/)
-- [x] [《我们生活在巨大的差距中》-余华](https://book.douban.com/subject/26291216/)
-- [x] [《我的心迟到了：佩索阿情诗》 - 费尔南多·佩索阿](https://book.douban.com/subject/35221710/)
-- [x] [《窄门》-纪德](https://book.douban.com/subject/30331835/)
-- [x] [《白痴》 - 陀氏托耶夫斯基](https://book.douban.com/subject/25887933/)
-- [x] [《荒原狼》 - 赫尔曼·黑塞](https://book.douban.com/subject/36214250/)
-  > 每一个自认为与这个世界格格不入便鄙视自我，仇视生活的人都该读一读的书。
-- [x] [《赶时间的人》 - 王计兵](https://book.douban.com/subject/36248699/)
-  > 王计兵的诗歌比较朴素，更像是一段白话被切成几段，正像是他在匆忙的外卖生活中静下来观察到的生活律动。他的诗歌着眼于生活中的平常，善于把再寻常不过的事情用不同的表象来联系，比如把月亮想象成洞、把麻雀想象成标点，这些对平凡事物的留心思考让身为外卖员的他，在如火如刀的生活里感受到生命的坚韧和情感的细腻，这也正是诗歌能给我们每一个平凡人传达的蒙太奇意义。
-- [x] [《在切瑟尔海滩上》- 伊恩麦克尤恩](https://book.douban.com/subject/30159097/)
-- [x] [《小王子》- 圣埃克苏佩里](https://book.douban.com/subject/1084336/)
-- [x] [《我曾走在崩溃的边缘》 - 俞敏洪](https://book.douban.com/subject/33414023/)
-- [x] [《长安的荔枝》- 马伯庸](https://book.douban.com/subject/36104107/)
-- [x] [《牧羊少年的奇幻之旅》- 保罗·柯艾略](https://book.douban.com/subject/3608208/)
-  > 你最大的宝藏就是你的品质，你早已拥有，寻找天命的过程只是为了提醒你。
-- [x] [《倦怠社会》-韩炳哲](https://book.douban.com/subject/33442259/)
-- [x] [《生命的礼物(A Matter of Death and Life)》- 欧文·亚隆 / 玛丽莲·亚隆](https://book.douban.com/subject/36374635/)
-- [x] [《德米安：彷徨少年时》- 黑塞](https://book.douban.com/subject/3578470/)
-- [x] [《卡拉马佐夫兄弟》 - 陀思妥耶夫斯基](https://book.douban.com/subject/25887924/)
-  > 神作！陀翁真乃神人也！
-  > 陀氏的书最独特深刻的一点就体现在—质疑上！他质疑上帝和魔鬼、质疑宗教和科学、质疑奴役和自由、质疑美和高尚…永远不轻易交付他的立场，这样的特质让他达到了“描绘人性的全部特征”的地步，在他的笔下，人性的任何小动作都被陀翁精细地描绘了出来，这样复杂的成分足够杂糅出社会、政治、宗教来…然而“人性”一词正如“美”一般，带有先入的褒义色彩和过分笼统的概括；在陀翁的刻画里，人有着“卡拉马佐夫”式的气质：长子米嘉的感性、次子伊万的理性、小儿子阿辽沙的神性以及私生子的恶，儿子们对老头儿的相继“杀害”揭示出上帝与魔鬼在人性这的拉扯，也反映出宗教、科学、法律、信仰等对人类社会这座马车的牵引。这场战争理应是不易和富有争议的，任何轻易的妥协都将导致崩塌，于人是生活的崩塌如犯罪和死亡，于人类是社会的不幸如沙文主义。于是，陀翁说我们应该对这世上任何人都有罪恶感，在对他人的赎罪中走向理解、兼容，正如“一粒种子若是活着，便只是一粒；若是死了，便会生出许多来”。
+<style>
+  /* ---------- Page scope ---------- */
+  .now {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #222;
+  }
+  .now .subtitle {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    color: #8a8f95;
+    margin: -8px 0 32px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  /* ---------- Section heading (same vocabulary as CV) ---------- */
+  .now-section { margin: 36px 0 48px; }
+  .now-section h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8a8f95;
+    margin: 0 0 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e4e6e8;
+    text-align: left;
+  }
+
+  /* ---------- Book entry ---------- */
+  .book {
+    padding: 18px 0;
+    border-bottom: 1px solid #f1f2f3;
+  }
+  .book:last-child { border-bottom: none; }
+
+  .book-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  .book-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .book-title a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+  }
+  .book-title a:hover { border-bottom-color: #1a1a1a; }
+  .book-author {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    color: #666;
+    font-size: 15px;
+  }
+  .book-date {
+    margin-left: auto;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    color: #8a8f95;
+    font-size: 13px;
+  }
+
+  /* ---------- Review (final polished take) ---------- */
+  .book-review {
+    margin: 10px 0 0;
+    color: #333;
+    line-height: 1.75;
+    font-size: 15.5px;
+  }
+  .book-review p { margin: 6px 0; }
+
+  /* ---------- Notes (underlines / thoughts while reading) ---------- */
+  .book-notes {
+    margin: 12px 0 0;
+  }
+  .book-notes summary {
+    cursor: pointer;
+    color: #8a8f95;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 4px 0;
+    transition: color 0.15s ease;
+  }
+  .book-notes summary::-webkit-details-marker { display: none; }
+  .book-notes summary::before {
+    content: "+ ";
+    font-family: Georgia, serif;
+    font-weight: 400;
+  }
+  .book-notes[open] summary::before { content: "− "; }
+  .book-notes summary:hover { color: #1a1a1a; }
+  .book-notes ul {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+    border-left: 2px solid #e4e6e8;
+  }
+  .book-notes li {
+    padding: 6px 0 6px 14px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+    font-style: italic;
+  }
+  .book-notes li + li { margin-top: 4px; border-top: 1px dotted #eef0f1; }
+
+  /* ---------- Status pill for currently reading ---------- */
+  .book-pill {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #5a7a2a;
+    background: #edf6d9;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-style: normal;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 640px) {
+    .book-date { margin-left: 0; width: 100%; }
+  }
+</style>
+
+<div class="now">
+  <p class="subtitle">What I'm reading now and recently.</p>
+
+  {% assign reading = site.data.books | where: "status", "reading" %}
+  {% assign finished = site.data.books | where: "status", "finished" %}
+
+  {% if reading.size > 0 %}
+  <section class="now-section">
+    <h3>Currently Reading</h3>
+    {% for book in reading %}
+      <article class="book">
+        <header class="book-head">
+          <h4 class="book-title">
+            {% if book.douban %}<a href="{{ book.douban }}" target="_blank" rel="noopener">《{{ book.title }}》</a>{% else %}《{{ book.title }}》{% endif %}
+          </h4>
+          {% if book.author %}<span class="book-author">— {{ book.author }}</span>{% endif %}
+          <span class="book-pill">Reading</span>
+        </header>
+
+        {% if book.review %}
+        <div class="book-review">{{ book.review | markdownify }}</div>
+        {% endif %}
+
+        {% if book.notes and book.notes.size > 0 %}
+        <details class="book-notes">
+          <summary>Notes ({{ book.notes.size }})</summary>
+          <ul>
+            {% for note in book.notes %}<li>{{ note }}</li>{% endfor %}
+          </ul>
+        </details>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <section class="now-section">
+    <h3>Finished</h3>
+    {% for book in finished %}
+      <article class="book">
+        <header class="book-head">
+          <h4 class="book-title">
+            {% if book.douban %}<a href="{{ book.douban }}" target="_blank" rel="noopener">《{{ book.title }}》</a>{% else %}《{{ book.title }}》{% endif %}
+          </h4>
+          {% if book.author %}<span class="book-author">— {{ book.author }}</span>{% endif %}
+          {% if book.finished %}<span class="book-date">{{ book.finished }}</span>{% endif %}
+        </header>
+
+        {% if book.review %}
+        <div class="book-review">{{ book.review | markdownify }}</div>
+        {% endif %}
+
+        {% if book.notes and book.notes.size > 0 %}
+        <details class="book-notes">
+          <summary>Notes ({{ book.notes.size }})</summary>
+          <ul>
+            {% for note in book.notes %}<li>{{ note }}</li>{% endfor %}
+          </ul>
+        </details>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </section>
+</div>

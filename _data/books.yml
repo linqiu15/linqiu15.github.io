@@ -1,0 +1,125 @@
+# =============================================================
+# Reading list — powers the /getting-started/ (Now) page
+# -------------------------------------------------------------
+# Fields:
+#   title     (required) Chinese title
+#   author    (optional) author name
+#   douban    (optional) link to Douban page
+#   status    (required) "reading" or "finished"
+#   finished  (optional) YYYY-MM when you finished. Sorted newest-first.
+#   review    (optional) one polished take, can be multiple paragraphs (Markdown)
+#   notes     (optional) list of underlines / thoughts captured while reading
+# -------------------------------------------------------------
+# Order: within each status, the list order is what renders.
+# Finished books: top = most recent. Add new ones at the top of
+# the "finished" block.
+# =============================================================
+
+# --------- CURRENTLY READING ---------
+- title: 死屋手记
+  douban: https://book.douban.com/subject/1088418/
+  status: reading
+
+# --------- FINISHED (most recent first) ---------
+- title: 克林索尔的最后夏天
+  douban: https://book.douban.com/subject/30389968/
+  status: finished
+
+- title: 法治的细节
+  douban: https://book.douban.com/subject/35635639/
+  status: finished
+
+- title: 胜者思维
+  douban: https://book.douban.com/subject/27038434/
+  status: finished
+
+- title: 我的阿勒泰
+  douban: https://book.douban.com/subject/35552619/
+  status: finished
+
+- title: 我们生活在巨大的差距中
+  author: 余华
+  douban: https://book.douban.com/subject/26291216/
+  status: finished
+
+- title: "我的心迟到了:佩索阿情诗"
+  author: 费尔南多·佩索阿
+  douban: https://book.douban.com/subject/35221710/
+  status: finished
+
+- title: 窄门
+  author: 纪德
+  douban: https://book.douban.com/subject/30331835/
+  status: finished
+
+- title: 白痴
+  author: 陀思妥耶夫斯基
+  douban: https://book.douban.com/subject/25887933/
+  status: finished
+
+- title: 荒原狼
+  author: 赫尔曼·黑塞
+  douban: https://book.douban.com/subject/36214250/
+  status: finished
+  review: |
+    每一个自认为与这个世界格格不入便鄙视自我，仇视生活的人都该读一读的书。
+
+- title: 赶时间的人
+  author: 王计兵
+  douban: https://book.douban.com/subject/36248699/
+  status: finished
+  review: |
+    王计兵的诗歌比较朴素，更像是一段白话被切成几段，正像是他在匆忙的外卖生活中静下来观察到的生活律动。他的诗歌着眼于生活中的平常，善于把再寻常不过的事情用不同的表象来联系，比如把月亮想象成洞、把麻雀想象成标点，这些对平凡事物的留心思考让身为外卖员的他，在如火如刀的生活里感受到生命的坚韧和情感的细腻，这也正是诗歌能给我们每一个平凡人传达的蒙太奇意义。
+
+- title: 在切瑟尔海滩上
+  author: 伊恩·麦克尤恩
+  douban: https://book.douban.com/subject/30159097/
+  status: finished
+
+- title: 小王子
+  author: 圣埃克苏佩里
+  douban: https://book.douban.com/subject/1084336/
+  status: finished
+
+- title: 我曾走在崩溃的边缘
+  author: 俞敏洪
+  douban: https://book.douban.com/subject/33414023/
+  status: finished
+
+- title: 长安的荔枝
+  author: 马伯庸
+  douban: https://book.douban.com/subject/36104107/
+  status: finished
+
+- title: 牧羊少年的奇幻之旅
+  author: 保罗·柯艾略
+  douban: https://book.douban.com/subject/3608208/
+  status: finished
+  notes:
+    - 你最大的宝藏就是你的品质，你早已拥有，寻找天命的过程只是为了提醒你。
+
+- title: 倦怠社会
+  author: 韩炳哲
+  douban: https://book.douban.com/subject/33442259/
+  status: finished
+
+- title: 生命的礼物 (A Matter of Death and Life)
+  author: 欧文·亚隆 / 玛丽莲·亚隆
+  douban: https://book.douban.com/subject/36374635/
+  status: finished
+
+- title: 德米安:彷徨少年时
+  author: 黑塞
+  douban: https://book.douban.com/subject/3578470/
+  status: finished
+
+- title: 卡拉马佐夫兄弟
+  author: 陀思妥耶夫斯基
+  douban: https://book.douban.com/subject/25887924/
+  status: finished
+  review: |
+    神作！陀翁真乃神人也！
+
+    陀氏的书最独特深刻的一点就体现在—质疑上！他质疑上帝和魔鬼、质疑宗教和科学、质疑奴役和自由、质疑美和高尚…永远不轻易交付他的立场，这样的特质让他达到了"描绘人性的全部特征"的地步，在他的笔下，人性的任何小动作都被陀翁精细地描绘了出来，这样复杂的成分足够杂糅出社会、政治、宗教来…然而"人性"一词正如"美"一般，带有先入的褒义色彩和过分笼统的概括；在陀翁的刻画里，人有着"卡拉马佐夫"式的气质：长子米嘉的感性、次子伊万的理性、小儿子阿辽沙的神性以及私生子的恶，儿子们对老头儿的相继"杀害"揭示出上帝与魔鬼在人性这的拉扯，也反映出宗教、科学、法律、信仰等对人类社会这座马车的牵引。这场战争理应是不易和富有争议的，任何轻易的妥协都将导致崩塌，于人是生活的崩塌如犯罪和死亡，于人类是社会的不幸如沙文主义。于是，陀翁说我们应该对这世上任何人都有罪恶感，在对他人的赎罪中走向理解、兼容，正如"一粒种子若是活着，便只是一粒；若是死了，便会生出许多来"。
+  notes:
+    - 一粒种子若是活着，便只是一粒；若是死了，便会生出许多来。

@@ -1,0 +1,215 @@
+// ============================================================
+// Footprint page styles (applies only when <body> has the class)
+// ============================================================
+
+body.footprint-page {
+
+  // Break out of the site's 740px container for this page
+  .container {
+    max-width: 1080px;
+  }
+
+  // Tone down the layout's default centered h1
+  article.page > h1 {
+    font-family: Georgia, "Times New Roman", "Songti SC", "STSong", serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    text-align: left;
+    margin: 20px 0 6px;
+  }
+
+  // ---------- Hero subtitle ----------
+  .footprint-hero {
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e4e6e8;
+  }
+  .footprint-subtitle {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    color: #8a8f95;
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  // ---------- Layout (content + optional right rail) ----------
+  .footprint-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  @media (min-width: 960px) {
+    .footprint-body {
+      grid-template-columns: 1fr 140px;
+    }
+  }
+
+  // ---------- Year rail ----------
+  .footprint-rail { display: none; }
+  @media (min-width: 960px) {
+    .footprint-rail {
+      display: block;
+      position: sticky;
+      top: 48px;
+      align-self: start;
+      padding-top: 12px;
+      font-size: 13px;
+    }
+    .footprint-rail h4 {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #8a8f95;
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e4e6e8;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    .footprint-rail ol { list-style: none; margin: 0; padding: 0; }
+    .footprint-rail li { margin: 10px 0; }
+    .footprint-rail a {
+      color: #8a8f95;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: color 0.15s ease;
+    }
+    .footprint-rail a:hover { color: #1a1a1a; }
+  }
+
+  // ---------- Year section ----------
+  .fp-year { margin: 56px 0 0; }
+  .fp-year:first-child { margin-top: 0; }
+  .fp-year-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin: 0 0 32px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e4e6e8;
+  }
+  .fp-year-head h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+  .fp-year-head h2::before,
+  .fp-year-head h2::after { display: none; } // kill site default decorative rules
+  .fp-year-note {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #8a8f95;
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  // ---------- Trip section ----------
+  .fp-trip { margin: 40px 0; }
+  .fp-trip-head { margin: 0 0 16px; }
+  .fp-trip-eyebrow {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8a8f95;
+    margin: 0 0 4px;
+  }
+  .fp-trip-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+    letter-spacing: -0.005em;
+    text-align: left;
+
+    .cn { color: #1a1a1a; }
+    .en {
+      color: #8a8f95;
+      font-style: italic;
+      font-weight: 400;
+      margin-left: 8px;
+      font-size: 18px;
+    }
+  }
+
+  // ---------- The grid ----------
+  .fp-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 8px;
+    margin: 0;
+  }
+  .fp-gallery figure {
+    margin: 0;
+    overflow: hidden;
+    background: #f4f4f4;
+    aspect-ratio: 4 / 3;
+    cursor: zoom-in;
+    position: relative;
+  }
+  .fp-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease, filter 0.25s ease;
+    // undo site default that centers block images
+    margin: 0;
+  }
+  .fp-gallery figure:hover img {
+    transform: scale(1.03);
+    filter: brightness(0.96);
+  }
+
+  // ---------- Lightbox ----------
+  .fp-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 12, 0.92);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 40px;
+
+    &.open { display: flex; }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    button {
+      position: absolute;
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      font-size: 28px;
+      padding: 16px;
+      transition: color 0.15s ease;
+      &:hover { color: #fff; }
+    }
+    .close { top: 16px; right: 16px; }
+    .prev  { left: 16px; top: 50%; transform: translateY(-50%); }
+    .next  { right: 16px; top: 50%; transform: translateY(-50%); }
+    .counter {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+  }
+}

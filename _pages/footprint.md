@@ -2,108 +2,105 @@
 layout: page
 title: Footprint
 permalink: /footprint/
+body_class: footprint-page
 ---
 
-# 二零二五年七月至十月
-## 爬山:青城山、灵岩山、瓦屋山、峨眉山、天台山
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/qingchengshan1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/qingchengshan2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/qingchengshan3.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lingyanshan1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lingyanshan2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lingyanshan3.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/wawushan1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/wawushan2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/wawushan3.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/emeishan1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/emeishan2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/emeishan3.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/tiantaishan1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/tiantaishan2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/tiantaishan3.jpeg" width="30%">
+<div class="footprint-hero">
+  <p class="footprint-subtitle">足迹 · a record of places</p>
 </div>
 
-## 骑行：天府绿道、都江堰-成都
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/qixingchengdu1.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/qixingchengdu2.jpeg" width="30%"><img src="{{ site.baseurl }}/images/footprint/qixingchengdu3.jpeg" width="30%">
+<div class="footprint-body">
+
+  <main>
+    {% for year_block in site.data.footprint %}
+      <section class="fp-year" id="y{{ year_block.year }}">
+        <div class="fp-year-head">
+          <h2>{{ year_block.year }}</h2>
+          {% if year_block.year_note %}<span class="fp-year-note">{{ year_block.year_note }}</span>{% endif %}
+        </div>
+
+        {% for trip in year_block.trips %}
+          <article class="fp-trip">
+            <header class="fp-trip-head">
+              {% if trip.eyebrow %}<p class="fp-trip-eyebrow">{{ trip.eyebrow }}</p>{% endif %}
+              <h3 class="fp-trip-title">
+                <span class="cn">{{ trip.title_cn }}</span>
+                {% if trip.title_en %}<span class="en">{{ trip.title_en }}</span>{% endif %}
+              </h3>
+            </header>
+            <div class="fp-gallery">
+              {% for img in trip.images %}
+                <figure><img src="{{ site.baseurl }}/images/footprint/{{ img }}" alt="{{ trip.title_en | default: trip.title_cn }}" loading="lazy" decoding="async"></figure>
+              {% endfor %}
+            </div>
+          </article>
+        {% endfor %}
+      </section>
+    {% endfor %}
+  </main>
+
+  <nav class="footprint-rail" aria-label="Years">
+    <h4>Years</h4>
+    <ol>
+      {% for year_block in site.data.footprint %}
+        <li><a href="#y{{ year_block.year }}">{{ year_block.year }}</a></li>
+      {% endfor %}
+    </ol>
+  </nav>
+
 </div>
 
-# 二零二四年二月
-## 大理
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/dali_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/dali_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/dali_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/dali_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/dali_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/dali_6.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/dali_7.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/dali_8.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/dali_9.jpg" width="30%">
+<!-- Lightbox (zero-dependency) -->
+<div class="fp-lightbox" id="fp-lightbox" aria-hidden="true">
+  <button class="close" aria-label="Close">&times;</button>
+  <button class="prev" aria-label="Previous">&larr;</button>
+  <img src="" alt="">
+  <button class="next" aria-label="Next">&rarr;</button>
+  <div class="counter"></div>
 </div>
 
-## 丽江
+<script>
+  (function () {
+    var lb = document.getElementById('fp-lightbox');
+    if (!lb) return;
+    var lbImg = lb.querySelector('img');
+    var counter = lb.querySelector('.counter');
+    var list = [], idx = 0;
 
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/lijiang_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_7.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_6.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_8.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/lijiang_9.jpg" width="30%">
-</div>
+    function show(i) {
+      idx = (i + list.length) % list.length;
+      lbImg.src = list[idx].src;
+      lbImg.alt = list[idx].alt;
+      counter.textContent = (idx + 1) + ' / ' + list.length;
+    }
+    function open(gallery, startIdx) {
+      list = Array.prototype.slice.call(gallery.querySelectorAll('img'));
+      show(startIdx);
+      lb.classList.add('open');
+      lb.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      lb.classList.remove('open');
+      lb.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
 
-# 二零二三年十二月
+    document.querySelectorAll('.fp-gallery').forEach(function (g) {
+      g.querySelectorAll('figure').forEach(function (fig, i) {
+        fig.addEventListener('click', function () { open(g, i); });
+      });
+    });
 
-## 故宫初雪
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/gugong_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gugong_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gugong_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gugong_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gugong_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/gugong_6.jpg" width="30%">
-</div>
-
-# 二零二三年十月
-
-## 北京（和家人）
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/beijingwf_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/beijingwf_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/beijingwf_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/beijingwf_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/beijingwf_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/beijingwf_6.jpg" width="30%">
-</div>
-
-# 二零二三年捌月
-
-## 上海
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/shanghai_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/shanghai_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/shanghai_3.jpg" width="30%">
-<img src="{{ site.baseurl }}/images/footprint/shanghai_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/shanghai_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/shanghai_6.jpg" width="30%">
-</div>
-
-## 黄山
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/huangshan_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/huangshan_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/huangshan_3.jpg" width="30%">
-</div>
-
-## 婺源篁岭
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/huanglin_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/huanglin_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/huanglin_3.jpg" width="30%">
-</div>
-
-## 西溪南
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/xixinan_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/xixinan_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/xixinan_3.jpg" width="30%">
-</div>
-
-## 呈坎
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/chengkan_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/chengkan_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/chengkan_3.jpg" width="30%">
-</div>
-
-# 二零二三年六月
-
-## 苏州
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/suzhou_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_6.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_7.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_8.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_9.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_10.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_11.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/suzhou_12.jpg" width="30%">
-</div>
-
-# 二零二三年伍月
-
-## 杭州
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/hangzhou_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/hangzhou_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/hangzhou_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/hangzhou_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/hangzhou_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/hangzhou_6.jpg" width="30%">
-</div>
-
-## 湖州
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/huzhou_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/huzhou_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/huzhou_3.jpg" width="30%">
-</div>
-
-# 二零二三年肆月
-
-## 巢湖
-
-<div align=center>
-<img src="{{ site.baseurl }}/images/footprint/chaohu_1.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/chaohu_2.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/chaohu_3.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/chaohu_4.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/chaohu_5.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/chaohu_6.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/chaohu_7.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/chaohu_8.jpg" width="30%"><img src="{{ site.baseurl }}/images/footprint/chaohu_9.jpg" width="30%">
-</div>
+    lb.querySelector('.close').addEventListener('click', close);
+    lb.querySelector('.prev').addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+    lb.querySelector('.next').addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') show(idx - 1);
+      if (e.key === 'ArrowRight') show(idx + 1);
+    });
+  })();
+</script>
