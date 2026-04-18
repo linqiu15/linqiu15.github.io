@@ -1,0 +1,334 @@
+// ============================================================
+// Academic / minimal refresh
+// Shared vocabulary with the CV page:
+//   - Georgia serif titles, left-aligned, weight 400
+//   - Small uppercase sans eyebrows (letter-spacing 2px, #8a8f95)
+//   - Hairline rules in #e4e6e8
+//   - Muted body color #222, link color #1a1a1a
+//
+// Scoped to `.layout-default`, `.layout-page`, `.layout-post` — the Footprint
+// page has its own body class (`.footprint-page`) and its own styles, so it is
+// guarded out with :not(). The CV and Now pages keep their page-local <style>
+// blocks, which continue to win inside their scoped containers (.cv, .now).
+// ============================================================
+
+$ac-ink:    #222;
+$ac-text:   #1a1a1a;
+$ac-muted:  #8a8f95;
+$ac-soft:   #666;
+$ac-rule:   #e4e6e8;
+$ac-link-u: #c9cdd1;
+
+// ---------- Shared overrides across all "prose" layouts ----------
+body.layout-page:not(.footprint-page),
+body.layout-post:not(.footprint-page),
+body.layout-default:not(.footprint-page) {
+
+  // Body prose reads a touch softer and tighter
+  #main.container {
+    color: $ac-ink;
+  }
+
+  // Kill the site's decorative centered rules by default in this scope
+  article.page > h1,
+  article.post.detailed > h1,
+  .posts article.post > a > h1 {
+    font-family: Georgia, "Times New Roman", "Songti SC", "STSong", serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: $ac-text;
+    margin: 20px 0 12px;
+  }
+
+  // Remove the decorative dashes that the theme adds around post h2/h3
+  .entry h2::before, .entry h2::after,
+  .entry h3::before, .entry h3::after,
+  article h2::before, article h2::after {
+    display: none !important;
+  }
+
+  // In-prose headings: left-aligned serif, not bold
+  .entry h2,
+  article.page .entry h2,
+  article.post.detailed .entry h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    color: $ac-text;
+    margin: 32px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid $ac-rule;
+  }
+
+  .entry h3,
+  article.page .entry h3,
+  article.post.detailed .entry h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 19px;
+    text-align: left;
+    color: $ac-text;
+    margin: 24px 0 8px;
+  }
+
+  // Prose links: subtle underline like CV
+  .entry a,
+  article.page .entry a {
+    color: $ac-text;
+    border-bottom: 1px solid $ac-link-u;
+    text-decoration: none;
+    transition: border-color 0.15s ease;
+  }
+  .entry a:hover,
+  article.page .entry a:hover {
+    border-bottom-color: $ac-text;
+  }
+}
+
+// ---------- Home feed (index.html, default layout) ----------
+body.layout-default:not(.footprint-page) {
+  .posts {
+    article.post {
+      margin: 0 0 36px;
+      padding: 0 0 28px;
+      border-bottom: 1px solid $ac-rule;
+
+      &:last-of-type { border-bottom: none; }
+    }
+
+    article.post > a {
+      text-decoration: none;
+      border-bottom: none;
+      display: block;
+
+      h1 {
+        margin: 4px 0 6px;
+        transition: color 0.15s ease;
+      }
+
+      &:hover h1 { color: $ac-muted; }
+    }
+
+    // Eyebrow-style date above each post card
+    .post_date {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $ac-muted;
+      margin: 0 0 8px;
+      text-align: left;
+    }
+
+    .entry {
+      color: $ac-soft;
+      font-size: 16.5px;
+      line-height: 1.65;
+      margin: 8px 0 12px;
+
+      p { margin: 0 0 10px; }
+    }
+
+    .read-more {
+      display: inline-block;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: $ac-text;
+      text-decoration: none;
+      border-bottom: 1px solid $ac-link-u;
+      padding-bottom: 2px;
+      transition: border-color 0.15s ease;
+
+      &:hover { border-bottom-color: $ac-text; }
+    }
+  }
+
+  // Pagination: minimal
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 40px 0 8px;
+    padding-top: 24px;
+    border-top: 1px solid $ac-rule;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    a, span {
+      color: $ac-muted;
+      text-decoration: none;
+      border-bottom: none;
+      padding: 2px 8px;
+    }
+    a:hover { color: $ac-text; }
+    .webjeda {
+      color: $ac-text;
+      font-weight: 500;
+    }
+  }
+}
+
+// ---------- Post detail (post.html layout) ----------
+body.layout-post:not(.footprint-page) {
+  article.post.detailed {
+    > h1 {
+      margin-bottom: 8px;
+    }
+
+    // Author · date meta → eyebrow
+    .author_title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $ac-muted;
+      margin: 0 0 4px;
+      text-align: left;
+    }
+
+    // Category pills
+    .post-tags {
+      margin: 10px 0 28px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid $ac-rule;
+
+      a {
+        display: inline-block;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: $ac-muted;
+        text-decoration: none;
+        border: 1px solid $ac-rule;
+        border-bottom: 1px solid $ac-rule;
+        border-radius: 2px;
+        padding: 2px 8px;
+        margin-right: 6px;
+        transition: color 0.15s ease, border-color 0.15s ease;
+      }
+      a:hover {
+        color: $ac-text;
+        border-color: $ac-text;
+      }
+    }
+
+    .entry {
+      color: $ac-ink;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    // Share row
+    .share-box {
+      display: inline-block;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $ac-muted;
+      margin-right: 6px;
+    }
+  }
+}
+
+// ---------- Page layout (About, Archive, Categories) ----------
+body.layout-page:not(.footprint-page) {
+  article.page {
+    > h1 {
+      margin-bottom: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid $ac-rule;
+    }
+
+    .entry {
+      color: $ac-ink;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+  }
+
+  // Archive + Categories: clean up year/month headers and entries
+  #archives {
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: 28px;
+      letter-spacing: -0.01em;
+      color: $ac-text;
+      margin: 40px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid $ac-rule;
+      text-align: left !important;
+    }
+
+    h3, .category-head {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $ac-muted;
+      margin: 22px 0 10px;
+      text-align: left !important;
+    }
+
+    ul.this, ul.past, ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    p {
+      margin: 6px 0;
+      padding: 4px 0;
+      font-size: 15.5px;
+      color: $ac-soft;
+      border-bottom: 1px dotted transparent;
+    }
+
+    p a, p b a {
+      color: $ac-text;
+      text-decoration: none;
+      border-bottom: 1px solid $ac-link-u;
+      transition: border-color 0.15s ease;
+    }
+    p a:hover, p b a:hover { border-bottom-color: $ac-text; }
+
+    .archive-group {
+      margin-bottom: 28px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $ac-rule;
+
+      &:last-of-type { border-bottom: none; }
+    }
+
+    .archive-item h4 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 6px 0;
+      text-align: left;
+
+      a {
+        color: $ac-text;
+        text-decoration: none;
+        border-bottom: 1px solid $ac-link-u;
+        transition: border-color 0.15s ease;
+      }
+      a:hover { border-bottom-color: $ac-text; }
+    }
+  }
+
+  // About page content: style the two h2 sections ("About me", "Contact")
+  // The page layout renders the title as <h1>, then markdown ## becomes h2.
+  // These h2s get the shared .entry h2 treatment from the top-level rule.
+  // Nothing extra needed here, but keep a hook for future tweaks.
+}
