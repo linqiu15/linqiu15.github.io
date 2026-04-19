@@ -187,18 +187,18 @@ permalink: /cv/
     <h3>Education</h3>
     <ul class="cv-list">
       <li>
-        <span class="cv-date">YYYY – YYYY</span>
+        <span class="cv-date">2019 – 2025</span>
         <div class="cv-entry">
           <strong>Ph.D. in Theoretical Physics</strong><br>
-          <span class="institution">Institution Name</span><br>
-          <span class="detail">Advisor: Prof. Name</span>
+          <span class="institution">Institute of High Energy Physics</span><br>
+          <span class="detail">Advisor: Prof. Qiang Zhao</span>
         </div>
       </li>
       <li>
-        <span class="cv-date">YYYY – YYYY</span>
+        <span class="cv-date">2015 – 2019</span>
         <div class="cv-entry">
           <strong>B.S. in Physics</strong><br>
-          <span class="institution">Institution Name</span>
+          <span class="institution">University of Chinese Academy of Sciences</span>
         </div>
       </li>
     </ul>
@@ -213,20 +213,13 @@ permalink: /cv/
         <div class="cv-entry">
           <strong>Postdoctoral Researcher</strong><br>
           <span class="institution">Old Dominion University · Jefferson Lab</span><br>
-          <span class="detail">Group / PI: ...</span>
-        </div>
-      </li>
-      <li>
-        <span class="cv-date">YYYY – YYYY</span>
-        <div class="cv-entry">
-          <strong>Previous Position Title</strong><br>
-          <span class="institution">Institution Name</span>
+          <span class="detail">Group / PI: JPAC</span>
         </div>
       </li>
     </ul>
   </section>
 
-  <!-- ========== AWARDS & HONORS ========== -->
+  <!-- ========== AWARDS & HONORS ==========
   <section class="cv-section">
     <h3>Awards &amp; Honors</h3>
     <ul class="cv-list">
@@ -239,9 +232,9 @@ permalink: /cv/
       </li>
       <!-- duplicate <li> blocks as needed -->
     </ul>
-  </section>
+  </section> -->
 
-  <!-- ========== TALKS ========== -->
+  <!-- ========== TALKS ==========
   <section class="cv-section">
     <h3>Selected Talks</h3>
     <ul class="cv-list">
@@ -255,9 +248,9 @@ permalink: /cv/
       </li>
       <!-- duplicate <li> blocks as needed -->
     </ul>
-  </section>
+  </section> -->
 
-  <!-- ========== TEACHING / SERVICE ========== -->
+  <!-- ========== TEACHING / SERVICE ==========
   <section class="cv-section">
     <h3>Teaching &amp; Service</h3>
     <ul class="cv-list">
@@ -269,9 +262,9 @@ permalink: /cv/
         </div>
       </li>
     </ul>
-  </section>
+  </section> -->
 
-  <!-- ========== FULL PDF ========== -->
+  <!-- ========== FULL PDF ==========
   <section class="cv-section">
     <h3>Full CV</h3>
     <p style="color:#666; font-size:14px; margin: 0 0 12px;">
@@ -286,6 +279,6 @@ permalink: /cv/
         </p>
       </div>
     </object>
-  </section>
+  </section> -->
 
 </div>
