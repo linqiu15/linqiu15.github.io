@@ -13,6 +13,28 @@
 # To add a trip: drop photos into /images/footprint/, then add
 # a new block here. Images render in the order listed.
 # =============================================================
+- year: "2026"
+  year_note: 二零二五年十月  · 二零二六年肆月
+  trips:
+    - eyebrow: "Oct 2025 – Apr 2026 · Newport News, Virginia"
+      title_cn: 日常
+      title_en: Everyday life in Newport News
+      images:
+        - NN1.jpeg
+        - NN2.jpeg
+        - NN3.jpeg
+        - NN4.jpeg
+        - NN5.jpeg
+        - NN6.jpeg
+        - NN7.jpeg
+        - NN8.jpeg
+        - NN9.jpeg
+        - NN10.jpeg
+        - NN11.jpeg
+        - NN12.jpeg
+        - NN13.jpeg
+        - NN14.jpeg
+        - NN15.jpeg
 
 - year: "2025"
   year_note: 二零二五年 · 七月至十月
