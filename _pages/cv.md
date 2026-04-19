@@ -209,7 +209,7 @@ permalink: /cv/
     <h3>Positions</h3>
     <ul class="cv-list">
       <li>
-        <span class="cv-date">YYYY – present</span>
+        <span class="cv-date">2025 – present</span>
         <div class="cv-entry">
           <strong>Postdoctoral Researcher</strong><br>
           <span class="institution">Old Dominion University · Jefferson Lab</span><br>
@@ -219,7 +219,7 @@ permalink: /cv/
     </ul>
   </section>
 
-  <!-- ========== AWARDS & HONORS ==========
+  {% comment %} ========== AWARDS & HONORS ==========
   <section class="cv-section">
     <h3>Awards &amp; Honors</h3>
     <ul class="cv-list">
@@ -232,9 +232,10 @@ permalink: /cv/
       </li>
       <!-- duplicate <li> blocks as needed -->
     </ul>
-  </section> -->
+  </section>
+  {% endcomment %}
 
-  <!-- ========== TALKS ==========
+  {% comment %} ========== TALKS ==========
   <section class="cv-section">
     <h3>Selected Talks</h3>
     <ul class="cv-list">
@@ -248,9 +249,10 @@ permalink: /cv/
       </li>
       <!-- duplicate <li> blocks as needed -->
     </ul>
-  </section> -->
+  </section>
+  {% endcomment %}
 
-  <!-- ========== TEACHING / SERVICE ==========
+  {% comment %} ========== TEACHING / SERVICE ==========
   <section class="cv-section">
     <h3>Teaching &amp; Service</h3>
     <ul class="cv-list">
@@ -262,9 +264,10 @@ permalink: /cv/
         </div>
       </li>
     </ul>
-  </section> -->
+  </section>
+  {% endcomment %}
 
-  <!-- ========== FULL PDF ==========
+  {% comment %} ========== FULL PDF ==========
   <section class="cv-section">
     <h3>Full CV</h3>
     <p style="color:#666; font-size:14px; margin: 0 0 12px;">
@@ -279,6 +282,7 @@ permalink: /cv/
         </p>
       </div>
     </object>
-  </section> -->
+  </section>
+  {% endcomment %}
 
 </div>
