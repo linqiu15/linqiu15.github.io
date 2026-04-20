@@ -224,6 +224,30 @@ p > img {
   margin: 0 auto;
 }
 
+// Fallback: if a paragraph has multiple direct images, keep them inline.
+p > img:first-child:not(:only-child),
+p > img:first-child:not(:only-child) ~ img {
+  display: inline-block;
+  width: 24.25%;
+  margin: 0;
+  vertical-align: top;
+}
+
+// Auto-layout image rows when multiple markdown images are placed in one paragraph.
+p:has(> img + img) {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1%;
+  align-items: flex-start;
+}
+
+p:has(> img + img) > img {
+  display: block;
+  margin: 0;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;

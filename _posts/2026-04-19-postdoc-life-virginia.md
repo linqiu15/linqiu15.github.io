@@ -13,6 +13,6 @@ categories: [Research, Life]
 
 落地Norfolk后，尽管前往宾馆只有两公里多，但背着包、拖着两个大行李，加上老生常谈的“安全”问题，即便“走路党”的我还是选择了Uber打车（两公里20刀的花费足以让我感受到物价的变化），司机还是很友善，询问了的情况还建议我下次提前预定Uber省钱。这就是落地时的印象吧，后面的入住宾馆、超市购物啥的，大抵类似。不过，让我印象深刻的还是初入宾馆的感受，可能是订的最便宜的宾馆(Intown Suites)，因此有上世纪美国南方建筑的风格：落地的空调和整天的噪音、简陋的设备条件（没有牙膏、牙刷、衣架等国内必备品）、老式的电梯（这大概是我觉得最cute的）...，所以我前两周的生活过得较为磕碜。
 
-<img src="/images/postdoc_life/airport.jpeg" alt="airport" width="24%" /> <img src="/images/postdoc_life/street.jpeg" alt="street" width="24%" /> <img src="/images/postdoc_life/hotel.jpeg" alt="hotel" width="24%" /> <img src="/images/postdoc_life/food.jpeg" alt="food" width="24%" />
+![](/images/postdoc_life/airport.jpeg) ![](/images/postdoc_life/street.jpeg) ![](/images/postdoc_life/hotol.jpeg) ![](/images/postdoc_life/food.jpeg)
 
 相对于国内各种亲切便利的服务，美国的公共服务确实没那么贴心，这种感受也是因为我是个回避型的外国人吧，我大抵感觉到文化差异对在异国融入日常生活的阻碍。大部分情况下，我与外界的交流主要是生活上的需要，而我自己很少深入更为本地的活动或文化：我购物只买自己熟悉的东西而对五花八门的标签不感兴趣、除了聚会我几乎不在外面饮食、从未深入过街头巷尾（如果有的话）...可以说，这样的国度差异几乎让我这个外来客只接触到美国的最外面一层，并不比国内的网友所感受到的多几分，因此我是觉得自己没有资格深入谈论各方面文化差异的，也许永远都没有。
