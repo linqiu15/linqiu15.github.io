@@ -450,6 +450,23 @@ footer {
   text-align: center;
 }
 
+.site-stats {
+  margin: 12px 0 0;
+  color: #6f7a82;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+#busuanzi_container_site_uv,
+#busuanzi_container_site_pv {
+  display: inline-block;
+}
+
+.site-stats-divider {
+  margin: 0 8px;
+  color: #a0a7ad;
+}
+
 body:after {
     background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
     width: 100%;

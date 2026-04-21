@@ -53,6 +53,17 @@
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
+          {% if site.visitor_counter %}
+          <p class="site-stats">
+            <span id="busuanzi_container_site_uv">
+              Visitors <span id="busuanzi_value_site_uv"></span>
+            </span>
+            <span class="site-stats-divider">/</span>
+            <span id="busuanzi_container_site_pv">
+              Views <span id="busuanzi_value_site_pv"></span>
+            </span>
+          </p>
+          {% endif %}
         </footer>
       </div>
     </div>
